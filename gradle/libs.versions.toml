@@ -1,0 +1,31 @@
+[versions]
+kotlin = "2.0.0"
+kotlin-serialization = "1.7.0-RC"
+compose-plugin = "1.6.20-dev1646"
+compose-version = "1.6.10-rc02" 
+ktor-version = "2.3.11"
+logback-version = "1.5.3"
+slf4j-version = "2.0.12"
+kstore-verison = "0.8.0"
+
+[libraries]
+compose-material = { group = "org.jetbrains.compose.material3", name = "material3-desktop", version.ref = "compose-version" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback-version" }
+ktor-server-core = { group = "io.ktor", name = "ktor-server-core-jvm", version.ref = "ktor-version" }
+ktor-server-websockets = { group = "io.ktor", name = "ktor-server-websockets-jvm", version.ref = "ktor-version" }
+ktor-server-netty = { group = "io.ktor", name = "ktor-server-netty-jvm", version.ref = "ktor-version" }
+ktor-server-contentNegotiation = { group = "io.ktor", name = "ktor-server-content-negotiation", version.ref = "ktor-version" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor-version" }
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor-version" }
+ktor-client-websockets = { group = "io.ktor", name = "ktor-client-websockets", version.ref = "ktor-version" }
+ktor-serialization = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor-version" }
+kotlin-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+kstore-core = { group = "io.github.xxfast", name = "kstore", version.ref = "kstore-verison" }
+kstore-file = { group = "io.github.xxfast", name = "kstore-file", version.ref = "kstore-verison" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose-plugin = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

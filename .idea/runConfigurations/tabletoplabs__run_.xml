@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="tabletoplabs [run]" type="CompoundRunConfigurationType">
+    <toRun name="tabletoplabs [run (1)]" type="GradleRunConfiguration" />
+    <toRun name="tabletoplabs [run (2)]" type="GradleRunConfiguration" />
+    <method v="2" />
+  </configuration>
+</component>
